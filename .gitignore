@@ -1,0 +1,23 @@
+# Run artifacts. Each _arm_* dir holds a frames.u8 of ~503 MB (81 x 1080 x 1920 x 3),
+# so a few arms quietly eat several GB. Never commit them.
+_arm_*/
+_grader_*/
+dev/_checks*.txt
+dev/_checks*.txt.body
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local scratch
+*.log
+.pytest_cache/
