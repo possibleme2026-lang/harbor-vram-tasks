@@ -1,0 +1,10 @@
+# Force LF everywhere. Several shipped files are byte-checked by upstream
+# terminal-bench check scripts (instruction.md's trailing timeout sentence,
+# Dockerfile parsing, canary comment position), so a CRLF checkout on Windows
+# would break them.
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.sh text eol=lf
+Dockerfile text eol=lf
